@@ -10,3 +10,6 @@ data/
 # Model files
 *.model
 
+# Log files
+*.log
+
