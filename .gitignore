@@ -1,0 +1,12 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS system files
+.DS_Store
+
+# Data directory
+data/
+
+# Model files
+*.model
+
