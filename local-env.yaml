@@ -15,4 +15,5 @@ dependencies:
   - hdbscan>=0.8.39
   - umap-learn>=0.5.7
   - matplotlib>=3.10.1
+  - plotly>=6.0.1
   - skrub >=0.5.3
