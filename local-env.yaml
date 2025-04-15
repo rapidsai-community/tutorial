@@ -1,0 +1,18 @@
+name: rapids-tutorial
+channels:
+  - conda-forge
+  - rapidsai
+  - nvidia
+dependencies:
+  - python=3.12
+  - cudf>=25.02
+  - cuml>=25.02
+  - cudf-polars>=25.02
+  - cuda-version>=12.0,<=12.8
+  - jupyterlab>=4.3
+  - polars >=1.21.0
+  - scikit-learn>=1.6.1
+  - hdbscan>=0.8.39
+  - umap-learn>=0.5.7
+  - matplotlib>=3.10.1
+  - skrub >=0.5.3
