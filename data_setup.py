@@ -67,6 +67,9 @@ def main():
     parser = argparse.ArgumentParser(description="Download datasets for RAPIDS tutorial")
     parser.add_argument("--all", action="store_true", help="Download all datasets")
     parser.add_argument(
+        "--pydata-vt", action="store_true", help="Download all datasets except 'transactions'"
+    )
+    parser.add_argument(
         "--pageviews", action="store_true", help="Download pageviews dataset"
     )
     parser.add_argument(
@@ -96,14 +99,14 @@ def main():
     print("Checking and downloading datasets...")
     create_data_directory()
 
-    if args.all or args.pageviews:
+    if args.all or args.pydata_vt or args.pageviews:
         download_file(
             "https://raw.githubusercontent.com/NVIDIA/accelerated-computing-hub/refs/heads/main/gpu-python-tutorial/data/pageviews_small.csv",
             "pageviews_small.csv",
             "pageviews_small.csv",
         )
 
-    if args.all or args.nyc_parking:
+    if args.all or args.pydata_vt or args.nyc_parking:
         download_file(
             "https://data.rapids.ai/datasets/nyc_parking/nyc_parking_violations_2022.parquet",
             "nyc_parking_violations_2022.parquet",
@@ -117,10 +120,10 @@ def main():
             "transactions.parquet"
         )
 
-    if args.all or args.cover_type:
+    if args.all or args.pydata_vt or args.cover_type:
         process_cover_type_dataset()
 
-    if args.all or args.har:
+    if args.all or args.pydata_vt or args.har:
         process_har_dataset()
 
     print("Download complete!")
