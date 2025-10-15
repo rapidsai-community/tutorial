@@ -4,11 +4,11 @@ channels:
   - rapidsai
   - nvidia
 dependencies:
-  - python=3.12
-  - cudf>=25.02
-  - cuml>=25.02
-  - cudf-polars>=25.02
-  - cuda-version>=12.0,<=12.8
+  - python=3.13
+  - cudf>=25.10
+  - cuml>=25.10
+  - cudf-polars>=25.10
+  - cuda-version=13.0
   - jupyterlab>=4.3
   - polars >=1.21.0
   - scikit-learn>=1.6.1
