@@ -9,6 +9,8 @@ This repository contains materials for the tutorial:
 
 For the in-person version of this tutorial we will use [NVIDIA Brev](https://brev.nvidia.com/)
 
+[![ Click here to deploy.](https://brev-assets.s3.us-west-1.amazonaws.com/nv-lb-dark.svg)](https://brev.nvidia.com/launchable/deploy?launchableID=env-34AUMbbrMykWC1dHqNVdT0Q4dcY)
+
 ### Google Colab
 You can run this tutorial on Google Colab. With a basic free account, you'll have access to:
 - An interactive Python environment with GPU support
