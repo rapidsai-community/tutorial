@@ -34,6 +34,7 @@ To run each notebook:
 | Notebook    | Link |
 | ----------- | ----------- |
 | cudf polars engine    | [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rapidsai-community/tutorial/blob/main/extras/cudf_polars_engine.ipynb) |
+| cuml clustering models   | [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rapidsai-community/tutorial/blob/main/extras/cuml_clustering_models.ipynb) |
 
 ### Local 
 
@@ -59,5 +60,5 @@ During this tutorial we will use different datasets, you can get them all by
 running the cell below. 
 
 ```bash
-python data_setup.py --all
+python data_setup.py --pydata-vt
 ```
