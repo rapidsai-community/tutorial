@@ -2,7 +2,7 @@ import pandas as pd
 import time
 
 df = pd.read_parquet(
-    "data/nyc_parking_violations_2022.parquet",
+    "../data/nyc_parking_violations_2022.parquet",
     columns=[
         "Registration State",
         "Violation Code",
