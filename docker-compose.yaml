@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    image: nvcr.io/nvidia/rapidsai/notebooks:25.10-cuda13-py3.13
+    pull_policy: always
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    shm_size: 1g
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      EXTRA_CONDA_PACKAGES: "hdbscan>=0.8.39 umap-learn>=0.5.7 plotly>=6.0.1 skrub>=0.5.3"
+    ports:
+      - "8888:8888"      # JupyterLab
+    volumes:
+      - /home/ubuntu/tutorial:/notebooks/
+    user: root
+    working_dir: /notebooks
+    entrypoint: ["/home/rapids/entrypoint.sh"]
+    command: sh -c "python data_setup.py --pydata-vt && python -m jupyter lab --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.token='' --NotebookApp.password='' --notebook-dir=/notebooks"
+    restart: unless-stopped
