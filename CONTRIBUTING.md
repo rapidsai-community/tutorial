@@ -1,6 +1,6 @@
 # Contributing to tutorial
 
-Thank you for your interest in contributing to tutorial! This document provides guidelines and instructions for contributing to the project.
+Thank you for your interest in contributing to tutorial! This document provides guidelines and instructions for contributing to the project.  At this time, only RAPIDS team members can contribute to RAPIDS Event Notebooks.  If you are not a RAPIDS team member, yet have contributed/need to make changes to a presentation, please [open an issue](#issue-reporting) and we will reach out.
 
 ## Table of Contents
 
